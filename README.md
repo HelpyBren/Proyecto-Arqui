@@ -19,10 +19,10 @@ Este repositorio contiene la base de datos con las tablas y datos de prueba para
  
 ``` 
 **2.** Levantar MYSQL con Docker (debe incluir docker-compose. yml)
+- para que sea mas directo
 ```bash
    docker-compose up -d
 ```
-   -para que sea directo, y no hacerlo desde 0
    ```yaml
 EJEMPLO:
 version: '3.8'
@@ -37,7 +37,7 @@ services:
       - "3306:3306"
     volumes:
       - ./data:/var/lib/mysql
-```
+  ```
 
 **3.** Importar la base de datos
 ```bash
