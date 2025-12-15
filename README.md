@@ -18,6 +18,7 @@ Este repositorio contiene la base de datos con las tablas y datos de prueba para
    cd Proyecto-Arqui
    
 **2.** Levantar MYSQL con Docker (debe incluir docker-compose. yml)
+´´ bash
    docker-compose up -d
    -para que sea directo, y no hacerlo desde 0
 EJEMPLO:
