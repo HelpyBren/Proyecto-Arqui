@@ -13,7 +13,7 @@ Este repositorio contiene la base de datos con las tablas y datos de prueba para
 
 ## COMO IMPORTAR LA BASE
  **1**. Clonar este repositorio:
-´´bash
+```bash
  git clone https://github.com/HelpyBren/Proyecto-Arqui.git
    cd Proyecto-Arqui
    
