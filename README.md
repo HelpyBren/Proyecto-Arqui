@@ -34,7 +34,7 @@ services:
       MYSQL_ROOT_PASSWORD: otorrinolaringologo
       MYSQL_DATABASE: adopcion
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - ./data:/var/lib/mysql
   ```
