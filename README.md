@@ -16,11 +16,14 @@ Este repositorio contiene la base de datos con las tablas y datos de prueba para
 ```bash
  git clone https://github.com/HelpyBren/Proyecto-Arqui.git
    cd Proyecto-Arqui
-   
+ 
+``` 
 **2.** Levantar MYSQL con Docker (debe incluir docker-compose. yml)
-´´ bash
+```bash
    docker-compose up -d
+```
    -para que sea directo, y no hacerlo desde 0
+   ```yaml
 EJEMPLO:
 version: '3.8'
 services:
@@ -34,13 +37,15 @@ services:
       - "3306:3306"
     volumes:
       - ./data:/var/lib/mysql
+```
 
 **3.** Importar la base de datos
+```bash
    docker exec -i database mysql -u root -p adopcion < adopcion.sql
    Usuario: root
    Contraseña: otorrinolaringologo
    Base: adopcion
-
+```
 ## NOTA
 - Los datos son de prueba
 - Se puede reemplazar por datos reales en produccion
