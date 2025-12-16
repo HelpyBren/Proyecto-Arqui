@@ -1,4 +1,4 @@
-<?php include("../backend/conexion.php"); ?>
+<?php include("backend/conexion.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
