@@ -1,5 +1,6 @@
-FROM php:7.4-apache
-COPY site/ /var/www/html
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN docker-php-ext-install pdo pdo_mysql
-EXPOSE 8000
+FROM php:8.2-apache
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+COPY ./frontend /var/www/html
+COPY ./backend /var/www/html/backend
+RUN chown -R www-data:www-data /var/www/html
+EXPOSE 80
