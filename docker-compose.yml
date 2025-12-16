@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    volumes:
+      - ./site:/var/www/html
+    ports:
+      - 8000:80
+  db:
+    image: mysql
+    volumes:
+      - ./datadb:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db_docker
+    ports:
+      - 8010:3306

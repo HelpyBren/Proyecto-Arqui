@@ -5,28 +5,20 @@
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-
 <header>
 <nav>
-<a href="perritos.html">Volver</a>
+<a href="perritos.php">Volver</a>
 </nav>
 </header>
 
-
 <div class="container">
-<h1>Agregar / Editar Perrito</h1>
-
-
-<form>
-<input type="text" placeholder="Nombre" required>
-<input type="number" placeholder="Edad" required>
-<textarea placeholder="Descripción"></textarea>
-<input type="text" placeholder="URL de la imagen">
+<h1>Agregar Perrito</h1>
+<form action="../backend/perritos_create.php" method="POST">
+<input type="text" name="nombre" placeholder="Nombre" required>
+<input type="number" name="edad" placeholder="Edad" required>
+<input type="text" name="raza" placeholder="Raza">
 <button>Guardar</button>
 </form>
 </div>
-
-
 </body>
 </html>
